@@ -1,0 +1,297 @@
+/* RESET DE ESTILOS */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #3E3E3E;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* HEADER */
+header {
+    width: 100%;
+    background-color: #50BEA2;
+    padding: 1rem;
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+nav {
+    display: flex;
+    gap: 1rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+/* MAIN CONTENT */
+.main-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 2rem auto;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.main-content img {
+    max-width: 50%;
+    height: auto;
+    margin-right: 2rem; /* Espaçamento entre a imagem e o texto */
+    border-radius: 10px;
+}
+
+.text-section {
+    flex: 1;
+}
+
+.text-section p {
+    color: #3E3E3E;
+    line-height: 1.6;
+    font-size: 1rem;
+    text-align: justify;
+}
+
+/* PRODUCTS SECTION */
+.products-section {
+    background-color: #f4f4f4;
+    padding: 2rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.product-card {
+    background-color: #ffffff;
+    border: 1px solid #CCCCCC;
+    border-radius: 5px;
+    padding: 1rem;
+    width: 200px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+}
+
+.product-card img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.product-card p {
+    margin: 0.5rem 0;
+    color: #3E3E3E;
+}
+
+/* WHATSAPP BUTTON */
+.whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25D366;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.whatsapp-button:hover {
+    background-color: #1DA851;
+}
+
+.whatsapp-button img {
+    width: 35px;
+    height: 35px;
+}
+
+/* CAROUSEL */
+.carousel {
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.carousel img {
+    width: 100%;
+    display: none;
+}
+
+.carousel img.active {
+    display: block;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* MOBILE MENU */
+.mobile-menu {
+    display: none;
+    color: #ffffff;
+}
+
+/* FOOTER */
+footer {
+    width: 100%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: #50BEA2;
+}
+
+.container {
+    width: 30%;
+    margin: 0 auto;
+}
+
+.footer-title {
+    margin: 1rem 0;
+    font-weight: 300;
+}
+
+.form-contact {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    font-family: "Arial", Times, serif;
+}
+
+.form-contact-input,
+.form-contact-textarea {
+    width: 100%;
+    color: #292929;
+    font-size: 18px;
+    background-color: #E9E9E9;
+    border: 1px solid #E9E9E9;
+    border-radius: 5px;
+    height: 40px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    text-indent: 20px;
+}
+
+.form-contact-textarea {
+    height: 200px;
+    padding-top: 16px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.form-contact-button {
+    width: 100%;
+    font-size: 18px;
+    border-radius: 4px;
+    color: #fff;
+    height: 40px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    background: #8F4688;
+    display: block;
+    border: none;
+    transition: 1s;
+}
+
+.buttons-social {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+}
+
+.buttons-social i {
+    padding: 1rem;
+    font-size: 1.5rem;
+    border-radius: 100%;
+    color: #8F4688;
+}
+
+.dev {
+    width: 100%;
+    color: white;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #8F4688;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 768px) {
+    .main-content {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .main-content img {
+        max-width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav {
+        display: none;
+        flex-direction: column;
+        gap: 0;
+        width: 100%;
+    }
+
+    .mobile-menu {
+        display: block;
+        cursor: pointer;
+    }
+
+    .mobile-menu.open + nav {
+        display: flex;
+    }
+}
