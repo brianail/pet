@@ -42,6 +42,10 @@ nav a {
 }
 
 /* MAIN CONTENT */
+
+main{
+    padding: 1rem;
+}
 .main-content {
     display: flex;
     flex-direction: row;
@@ -89,8 +93,13 @@ nav a {
     border-radius: 5px;
     padding: 1rem;
     width: 200px;
-    text-align: center;
+    text-align: left;
     transition: transform 0.3s;
+}
+
+.DISPONÍVEL{
+
+ color: #25D366;
 }
 
 .product-card:hover {
@@ -249,7 +258,15 @@ footer {
     padding: 1rem;
     font-size: 1.5rem;
     border-radius: 100%;
-    color: #8F4688;
+    color: white;
+}
+.buttons-social a {
+    width: 200px;
+    height: 50px;
+    margin: 0.2rem;
+    border-radius: 50px;
+    background-color: #8F4688;
+    color: white;
 }
 
 .dev {
@@ -260,6 +277,10 @@ footer {
     flex-direction: column;
     align-items: center;
     background-color: #8F4688;
+}
+
+.dev a{
+    color: white;
 }
 
 /* MEDIA QUERIES */
